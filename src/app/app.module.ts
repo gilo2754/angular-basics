@@ -1,14 +1,12 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { MoviesModule } from './movies/movies.module';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { MoviesModule } from './movies/movies.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MoviesModule],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent],
+  imports: [BrowserModule, MoviesModule],
   providers: [],
   bootstrap: [AppComponent],
 })

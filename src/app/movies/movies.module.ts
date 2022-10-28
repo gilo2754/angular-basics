@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieOverviewComponent } from './movie-overview/movie-overview.component';
 import { MovieService } from './movie.service';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
