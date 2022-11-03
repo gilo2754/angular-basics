@@ -6,7 +6,7 @@
       <th>Movie</th>
     </tr>
     <tr
-      *ngFor="let movie of movies; index as index"
+      *ngFor="let movie of movies$ | async; index as index"
       (click)="selectMovie(movie)"
       [class.row-active]="isMovieSelected(movie)"
     >
